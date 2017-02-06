@@ -1,0 +1,94 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+ul {
+  padding-left: 0;
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+.banner {
+  padding: 1rem;
+  background: #3131aa;
+  color: #fefefe;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  /* flex-direction: row; /* Default flex-direction value */
+}
+
+/*.navbar__group {
+  background: white;
+  color: transparent;
+}*/
+
+.nav-list {
+  display: flex;
+  /*margin: -0.5rem -1rem -0.5rem -1rem;*/
+  margin: -0.5rem -1rem;
+  justify-content: space-between;
+}
+
+.nav-list__item {
+  margin: 0.5rem 1rem;
+}
+
+/* Grid */
+.section {
+  padding: 1rem;
+}
+
+.container {
+  max-width: 65rem;
+  margin: 0 auto;
+}
+
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  /*justify-content: space-around;*/
+}
+
+.grid__item {
+  margin: 1rem;
+  flex-basis: calc(100% / 4 - 2rem);
+
+  flex-grow: 1;
+
+  background: green;
+}
+
+
+/* Card */
+.card {
+  position: relative;
+
+  min-width: 14rem;
+  border: red solid 2px;
+  padding: 1rem;
+}
+
+.card__tag {
+  background: goldenrod;
+  padding: 1rem;
+
+  position: absolute;
+  /* Add Margin 0 whenever you use position:absolute */
+  margin: 0;
+  top: 0;
+  left: 50%;
+
+  transform: translateX(-50%);
+}
